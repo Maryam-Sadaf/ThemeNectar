@@ -1,0 +1,115 @@
+.responsive-header {
+  display: none;
+}
+.responsive-menu {
+  display: none;
+}
+
+@media (max-width: 875px) {
+  .responsive-header {
+      margin-left: 20px;
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+    padding: 18px;
+    overflow: auto;
+  }
+  .banner{
+    display: none;
+  }
+
+
+.responsive-menu{
+  display: block;
+  position: absolute;
+  top: 0px;
+  background-color: black;
+  width: 85%;
+  height: 100%;
+  overflow: hidden;
+}
+.logo-shall{
+  font-size:
+17px;
+font-family:
+Roboto;
+font-weight:
+400;
+color: #2B92CA;
+
+}
+.responsive-menu h1,span  {
+  color: white;
+}
+.btn {
+  
+  text-decoration: none;
+    color: #fff;
+    background-color: #9DC94A;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+}
+.responsive-menu-container{
+  margin-left: 35px;
+}
+.mobile-animated-icon {
+  width:100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  padding: 13px 10px 13px 35px;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+ 
+} 
+.mobile-navigation{
+  line-height:
+17px;
+margin:
+10px 0px 0px;
+padding:
+16px 20px 15px;
+font-size:
+17px;
+font-family: Roboto;
+background: #444;
+}
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 22px;
+
+}
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+ 
+  gap: 10px;
+  height: 20px;
+  padding: 20px 20px;
+    color: #fff;
+    font-size: 17px;
+    border-bottom: 1px solid #ffffff78;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.toggleicon{
+  font-size: 25px;
+  margin-left: 20px;
+}

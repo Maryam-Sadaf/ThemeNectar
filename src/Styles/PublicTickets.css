@@ -1,0 +1,179 @@
+.ticket-article {
+  
+    background-color: #f2f2f2;
+    padding: 100px 100px;
+    text-align: left;
+    /* margin-top: 40px; */
+    /* z-index: -100; */
+  }
+  
+  .ticket-title {
+    
+    margin: 0;
+    color:#555555;
+    font-size: 12px;
+    font-weight: 500px;
+    background-color:RGB(250, 250, 250);
+    letter-spacing:1px;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    padding:18px 13px 17px 18px;
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  }
+  .ticket-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items:start;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;  
+  }
+  .ticket{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+   position: relative;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    align-items: left;
+    border-radius: 50%;
+    line-height: 17px;
+    top: 15px;
+    margin:30px;
+    /* left: 20px; */
+  }
+  .ticket-details {
+   z-index: 1;
+  }
+  .publick-ticket-tittle{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    border: none; 
+  }
+  .ticket-customer{
+    color:RGB(136, 136, 136);
+   line-height:15px;
+   margin:-1px 0px 8px;
+   font-weight:600;
+   font-size:13px;  
+   padding-top:20px
+}
+  .ticket-customer-shope{
+    color:
+    RGB(51, 51, 51);    
+    line-height:18px;
+margin:-1px 0px 8px;
+font-weight:400;
+font-size:20px; 
+  }
+  .description {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; Change to flex-start */
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+  }
+  .Thumbnail-img {
+    width: 8%;
+    height: 3vh;
+    border-radius: 3px;
+  }
+  .category-name {
+    color: RGB(136, 136, 136);
+     line-height: 20px;  
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 10px;;
+    justify-content: flex-start
+  }
+  .category-name-updata{
+    color: RGB(136, 136, 136); 
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 10px;
+    width: 70%;
+  }
+.category-name-comment{
+  color: RGB(136, 136, 136); 
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 5px;
+   
+} 
+  .icon-general{
+    margin-left: 10px;
+    font-size: 17px;
+    color:#55555544; 
+    
+  }
+ .icon-general-comment{
+  margin-left: 20px;
+  font-size: 22px;
+  color:#55555551; 
+ }
+.border-public-tickets{
+  
+  width: 100%;
+  height: 10vh;
+  border:  5px solod black;
+  margin-top: 10px;
+}
+
+
+.ticket:hover {
+  background-color: #f2f2f2;
+ 
+}
+
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+    color:#555555;
+    font-size: 12px;
+    font-weight: 500px;
+    background-color:RGB(250, 250, 250);
+    letter-spacing:1px;
+    border-bottom: 1px solid #ccc;
+    padding:18px 13px 17px 18px;
+    background-color: #f2f2f2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #555;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import Header from './Screen/Header';
+import { Route, Routes } from 'react-router-dom';
+import SubmitTicket from './Screen/Submitticket/SubmitTicket';
+import Herosection from './Screen/Herosection';
+import PublicTickets from '../src/Screen/PublicTickets/PublicTickets'
+import Ticket from './Screen/PublicTickets/Ticket';
+const App = () => {
+    return (
+        <div>
+            <Routes>
+                <Route path="/" element={<Header />}>
+                    <Route index element={<Herosection />} />
+                    <Route path="/submitTicket" element={<SubmitTicket />} />
+                    <Route path="/publicTicket" element={<PublicTickets/>} />
+                    <Route path="ticket/:id" element={<Ticket />} />
+                </Route>
+            </Routes>
+        </div>
+    );
+};
 
 export default App;

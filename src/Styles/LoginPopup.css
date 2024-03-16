@@ -1,0 +1,261 @@
+/* LoginPopup.css */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: #0000001a;
+  }
+  
+  .popup-overlay.open {
+    display: flex;
+  }
+  
+  .popup-container {
+    background: #f5f5f5;
+    /* padding: 20px; */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin-top: 30px;
+    /* height: 70vh; */
+  }
+  
+  .top-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#85b448;
+    color: azure;
+    border-radius: 6px 6px 0px 0px;
+    margin: 0px;
+    padding: 0px;
+    height:40px;
+  }
+  .bordered{ 
+    line-height: 38px;
+    font-size:13px;
+    font-weight: 700;
+    letter-spacing: 0.5px; 
+    padding: 0px 10px;
+  }
+
+  .closeicon {
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 10PX;
+
+  }
+  
+  .popup-header h3 {
+    margin: 0;
+  }
+ .envato-signin-block{
+    padding: 20px;
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+    font-size: 15px;
+    display:flex;
+    flex-direction: row;
+    width:80%;
+   margin: 20px 40px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 30px;
+    background-color: #9DC94A;
+    color: white;
+    font-weight: 500;
+border-radius: 5px;
+ } 
+ .envato-signin-block:hover{
+  background-color:#85b448;
+ }
+ .envato-signin-block {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .envato-icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .envato-heading {
+    margin: 0;
+    line-height: 38px;
+    font-size:18px;
+    margin-bottom: 6px;
+  }
+  .signin-or-block {
+    border-bottom: 1px solid #ccc;
+    color: #aaa;
+    text-align: center;
+    margin: 0 0 -3px !important;
+    font-size: 15px;
+    line-height: 1.7;
+    
+}
+.signin-or-block span {
+    position: relative;
+    top: 17px;
+    font-size: 19px;
+    font-weight: 300;
+    background: #f5f5f5;
+    padding: 0 10px;
+    display: inline-block;
+}
+/* .register-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    margin-top: 15px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s ease;
+    margin-top: 45px;
+  }
+  
+  .register-button:hover {
+    background-color: #45a049;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 24px;
+  } */
+ 
+/* Popup section styles */
+.form-field {
+   
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto; /* Center the section horizontally */
+  }
+  
+  /* Register button styles */
+  .register-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    border: none;
+    background-color:rgb(93, 92, 92);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .register-button:hover {
+    background-color: rgb(56, 56, 56);
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  /* Input field styles */
+  .field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Link styles */
+  .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border: 0px;
+    text-decoration: none;
+  }
+  
+  /* Button styles */
+  .button-submit{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#9DC94A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   margin-top:10px;
+   font-weight: 600;
+  }
+  .button-submit:hover{
+    background-color:#85b448;;
+  }
+  @media (max-width: 768px) {
+    .popup-container {
+      width: 60%; /* Adjust width for smaller screens */
+      max-width: 400px; /* Add a maximum width for larger tablets */
+    }
+  .envato-signin-block{
+    width: 80%;
+  }
+    .form-field {
+      width: 90%; /* Adjust width for smaller screens */
+      max-width: 400px; /* Add a maximum width for larger tablets */
+    }
+    .register-button {
+      width: 100%;
+      justify-content: center;
+      letter-spacing: 2px;
+    }
+  }
+    @media(max-width: 720px){
+      .popup-overlay {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: fixed;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 4000000000;
+    }
+    /* .envato-signin-block{
+      width: 70%;
+    } */
+    .popup-container {
+      background: #f5f5f5;
+      /* padding: 20px; */
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      /* height: 70vh; */
+    }
+    .register-button {
+      width: 100%;
+    }
+  }
+  @media (max-width: 720px){
+.popup-container {
+  position: fixed;
+    background: #f5f5f5;
+    /* padding: 20px; */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-top: 100px;
+}}
+  /* Rest of your styles ... */
+  

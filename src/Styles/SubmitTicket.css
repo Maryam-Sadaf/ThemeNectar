@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.submit-ticket-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #fff;
+  width: 83%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-top: 170px;
+  margin-bottom: 130px;
+}
+
+.overlay {
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitTicket-heading {
+  margin: 0;
+  padding: 18px 13px 17px 18px;
+  background: #fafafa;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1;
+  z-index: -1000px;
+}
+
+.submitTicket-heading2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #9DC94A;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.submitTicket-heading3 {
+  line-height: 1.5;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.input-with-icon {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 7vh;
+}
+
+.input-submitTicket {
+  flex-grow: 1;
+  padding-left: 20px;
+  border: none;
+  font-size: 18px;
+  color: #AAAAAA;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 25px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+body {
+  font-weight: 400;
+  font-size: 15px;
+  color: #555;
+  background: #f2f2f2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.data {
+  padding: 40px;
+}
+
+@media screen and (max-width:755px) {
+  .popup {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 110px;
+    margin-bottom: 30px;
+  
+  }
+
+  .overlay {
+    width: 100%;
+    /* height: 100vh; */
+    /* position: absolute; */
+  }
+}
+
+
+/* @media screen and (max-width: 768px) {
+  .popup {
+    margin-top: 50px;
+    background-color: #fff;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .popup {
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #fff;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+  }
+
+} */
