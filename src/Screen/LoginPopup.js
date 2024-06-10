@@ -7,6 +7,7 @@ import appStore from '../Store/AppStore';
 import {  useNavigate } from 'react-router-dom';
 import forgotPasswordStore from '../Store/ForgotPasswordStore';
 
+
 const LoginPopup = observer(() => {
     const navigate = useNavigate()
     const handleInputChange = (e) => {
